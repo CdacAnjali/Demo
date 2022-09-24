@@ -1,0 +1,20 @@
+package Lab3;
+//firstTerm =  0
+//secondTerm = 1 
+//nextTerm = firstTerm + secondTerm; (0 + 1)
+//firstTerm = secondTerm; (1)
+//secondTerm = nextTerm; (1)
+//nextTerm = firstTerm + secondTerm; (1 + 1)
+public class Fibonacci {
+	public static void main(String[] args) {
+	    int n = 10, firstTerm = 0, secondTerm = 1;
+	    System.out.println("Fibonacci Series till " + n + " terms:");
+	    for (int i = 1; i <= n; ++i) {
+	      System.out.print(firstTerm + ", ");
+	      // compute the next term
+	      int nextTerm = firstTerm + secondTerm;
+	      firstTerm = secondTerm;
+	      secondTerm = nextTerm;
+	    }
+	  }
+}
